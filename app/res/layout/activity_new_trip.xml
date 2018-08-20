@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/currentDateLabel"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="26dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="16dp"
+        android:text="TODAY"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/expense_type_label"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/amount5"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="14dp"
+        android:layout_toEndOf="@+id/veg"
+        android:ems="10"
+        android:hint="$"
+        android:inputType="number|numberDecimal"
+        app:layout_constraintEnd_toStartOf="@+id/delete5"
+        app:layout_constraintStart_toEndOf="@+id/type5"
+        app:layout_constraintTop_toBottomOf="@+id/amount4" />
+
+    <EditText
+        android:id="@+id/amount4"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@+id/veg"
+        android:ems="10"
+        android:hint="$"
+        android:inputType="number|numberDecimal"
+        app:layout_constraintEnd_toStartOf="@+id/delete4"
+        app:layout_constraintStart_toEndOf="@+id/type4"
+        app:layout_constraintTop_toBottomOf="@+id/amount3" />
+
+    <EditText
+        android:id="@+id/amount3"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="14dp"
+        android:layout_toEndOf="@+id/veg"
+        android:ems="10"
+        android:hint="$"
+        android:inputType="number|numberDecimal"
+        app:layout_constraintEnd_toStartOf="@+id/delete3"
+        app:layout_constraintStart_toEndOf="@+id/type3"
+        app:layout_constraintTop_toBottomOf="@+id/amount2" />
+
+    <EditText
+        android:id="@+id/amount2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="194dp"
+        android:layout_toEndOf="@+id/veg"
+        android:ems="10"
+        android:hint="$"
+        android:inputType="number|numberDecimal"
+        app:layout_constraintEnd_toStartOf="@+id/delete2"
+        app:layout_constraintStart_toEndOf="@+id/type2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/amount1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_toEndOf="@+id/veg"
+        android:ems="10"
+        android:hint="$"
+        android:inputType="number|numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/amount2"
+        app:layout_constraintEnd_toStartOf="@+id/delete1"
+        app:layout_constraintStart_toEndOf="@+id/type1" />
+
+    <AutoCompleteTextView
+        android:id="@+id/type5"
+        android:layout_width="144dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="49dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:inputType="textCapSentences"
+        app:layout_constraintEnd_toStartOf="@+id/amount5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/type4" />
+
+    <AutoCompleteTextView
+        android:id="@+id/type4"
+        android:layout_width="144dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="49dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:inputType="textCapSentences"
+        app:layout_constraintEnd_toStartOf="@+id/amount4"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/type3" />
+
+    <AutoCompleteTextView
+        android:id="@+id/type3"
+        android:layout_width="144dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="49dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:inputType="textCapSentences"
+        app:layout_constraintEnd_toStartOf="@+id/amount3"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/type2" />
+
+    <AutoCompleteTextView
+        android:id="@+id/type2"
+        android:layout_width="144dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="49dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textCapSentences"
+        app:layout_constraintEnd_toStartOf="@+id/amount2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/type1" />
+
+    <AutoCompleteTextView
+        android:id="@+id/type1"
+        android:layout_width="144dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="27dp"
+        android:ems="10"
+        android:inputType="textCapSentences"
+        app:layout_constraintEnd_toStartOf="@+id/amount1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/expense_type_label" />
+
+    <TextView
+        android:id="@+id/amount_label"
+        android:layout_width="127dp"
+        android:layout_height="32dp"
+        android:layout_marginBottom="72dp"
+        android:layout_marginEnd="67dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="74dp"
+        android:text="Amount($)"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/amount1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/expense_type_label"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/expense_type_label"
+        android:layout_width="155dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="45dp"
+        android:text="Expense Type"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/amount_label"
+        app:layout_constraintEnd_toStartOf="@+id/amount_label"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/amount_label"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/delete5"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="32dp"
+        android:background="@android:drawable/ic_menu_close_clear_cancel"
+        android:onClick="onCrossButton"
+        app:layout_constraintBaseline_toBaselineOf="@+id/amount5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/amount5"
+        android:tag="5"/>
+
+    <Button
+        android:id="@+id/delete4"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="32dp"
+        android:background="@android:drawable/ic_menu_close_clear_cancel"
+        android:onClick="onCrossButton"
+        app:layout_constraintBaseline_toBaselineOf="@+id/amount4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/amount4"
+        android:tag="4"/>
+
+    <Button
+        android:id="@+id/delete3"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="32dp"
+        android:background="@android:drawable/ic_menu_close_clear_cancel"
+        android:onClick="onCrossButton"
+        app:layout_constraintBaseline_toBaselineOf="@+id/amount3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/amount3"
+        android:tag="3"/>
+
+    <Button
+        android:id="@+id/delete2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="32dp"
+        android:background="@android:drawable/ic_menu_close_clear_cancel"
+        android:onClick="onCrossButton"
+        app:layout_constraintBaseline_toBaselineOf="@+id/amount2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/amount2"
+        android:tag="2"/>
+
+    <Button
+        android:id="@+id/delete1"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="22dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="24dp"
+        android:background="@android:drawable/ic_menu_close_clear_cancel"
+        android:onClick="onCrossButton"
+        app:layout_constraintBottom_toTopOf="@+id/delete2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/amount1"
+        app:layout_constraintTop_toBottomOf="@+id/amount_label"
+        android:tag="1"/>
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/kitchen"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="28dp"
+        android:layout_marginStart="60dp"
+        android:onClick="onSaveEvent"
+        android:text="Save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/cancelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/mobile"
+        android:layout_alignTop="@+id/saveButton"
+        android:layout_marginBottom="30dp"
+        android:layout_marginStart="59dp"
+        android:onClick="onCancelEvent"
+        android:text="Cancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/saveButton" />
+
+</android.support.constraint.ConstraintLayout>
