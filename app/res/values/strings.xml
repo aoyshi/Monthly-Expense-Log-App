@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Expense Log</string>
+    <string name="veg">Veggies/Fruits</string>
+    <string name="meat">Meat/Fish</string>
+    <string name="other_food">Essential Groceries</string>
+    <string name="personal">Personal Supplies</string>
+    <string name="kitchen">Kitchen Supplies</string>
+    <string name="toilet">Toiletries</string>
+    <string name="nonessential">Non-Essentials</string>
+    <string name="gas">Gas</string>
+    <string name="rent">Rent</string>
+    <string name="auto">Auto Insurance</string>
+    <string name="mobile">Mobile</string>
+    <string name="internet">Internet</string>
+</resources>
